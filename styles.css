@@ -36,15 +36,15 @@ body{
 .center{
     position: absolute;
     top: 150px;
-    left: 450px;
+    left: 480px;
     float: right;
     margin: 0 0 20px 20px;
 }
 #earth{
     background: url("https://i.ibb.co/0XcTy98/3-no-ice-clouds-16k.jpg");
     background-size: cover;
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 500px;
     border-radius: 100%;
     box-shadow: -20px -20px 20px rgba(0, 0, 0, 0.87) inset,0 0 13px black;
     animation: move 400s linear alternate infinite;
