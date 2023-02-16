@@ -1,0 +1,77 @@
+*{
+  padding: 0;
+  margin:0;
+  font-family: sans-serif;
+
+}
+
+body{
+  background: #18122B;
+}
+
+.container{
+  text-align: center;
+  position:relative;
+  top:2rem;
+  transform: translate(20px,10px);
+}
+
+.container span{
+  color:white;
+  text-transform: uppercase;
+  display:block;
+}
+
+.text1{
+  font-size:2.5rem;
+  font-weight: 400;
+  letter-spacing: 1rem;
+  margin-bottom: 2rem;
+  background:black;
+  animation:text 10s 5;
+  position:relative;
+}
+.earth{
+  height:40vh;
+  width:40vh;
+  position:relative;
+  top:20rem;
+  align:center;
+  transform:translate(-50%,-50%);
+  background:seashell;
+  border-radius:50%;
+  background-image: url("https://i.ibb.co/Df5np7q/earth.jpg");
+  background-position-x: center;
+  background-size: 100%, 100%;
+  background-repeat:repeat-x;
+  box-shadow: inset 1rem 0rem 2.5rem 0.19rem rgba(0,0,0)
+              inset -0.5rem 0rem 0.4rem 0.2rem rgba(255,255,255,0.1);
+  animation:rotate 4s linear infinite;
+
+}
+@keyframes rotate {
+  from {
+    background-position-x : 0vh;
+
+  }
+  to{
+    background-position-x: 40vh;
+
+  }
+}
+@keyframes text {
+  0%{
+    color: black;
+    margin-bottom:-2.5rem;
+
+  }
+  30%{
+    letter-spacing: 2rem;
+    margin-bottom:-2.5rem;
+
+  }
+  85%{
+    letter-spacing: 0.5rem;
+    margin-bottom: -2.5rem;
+  }
+}
