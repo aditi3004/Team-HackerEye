@@ -31,31 +31,7 @@ body{
   animation:text 10s 5;
   position:relative;
 }
-/*.earth{
-  height:20vh;
-  width:20vh;
-  position:relative;
-  top:20rem;
-  left:50rem;
-  align:center;
-  transform:translate(-50%,-50%);
-  background:seashell;
-  border-radius:50%;
-  background-image: url("https://i.ibb.co/Df5np7q/earth.jpg");
-  background-position-x: center;
-  background-size: 100%, 100%;
-  background-repeat:repeat-x;
-  box-shadow: inset 2em 50em 20em rgba(0,0,0)
-              inset 2em 50em 20em rgba(255,255,255,0.1);
-  animation:rotate 6s linear infinite;
-}
-@keyframes rotate {
-  from {
-    background-position-x : 0vh;
-  }
-  to{
-    background-position-x: 40vh;
-  }*/
+
 
 .center{
     position: absolute;
@@ -109,4 +85,27 @@ body{
     letter-spacing: 0.5rem;
     margin-bottom: -2.5rem;
   }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.calculator{
+  text-align: center;
+  position:relative;
+  top:50rem;
+  transform: translate(20px,10px);
+}
+.calculator span{
+  color:white;
+  text-transform: uppercase;
+  display:block;
+}
+.text2{
+  font-size:1.5rem;
+  font-weight: 200;
+  letter-spacing: 0.75rem;
+  margin-bottom: 2rem;
+  background:black;
+  position:relative;
 }
