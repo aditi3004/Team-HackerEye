@@ -32,10 +32,11 @@ body{
   position:relative;
 }
 .earth{
-  height:40vh;
-  width:40vh;
+  height:20vh;
+  width:20vh;
   position:relative;
   top:20rem;
+  left:50rem;
   align:center;
   transform:translate(-50%,-50%);
   background:seashell;
@@ -44,19 +45,17 @@ body{
   background-position-x: center;
   background-size: 100%, 100%;
   background-repeat:repeat-x;
-  box-shadow: inset 1rem 0rem 2.5rem 0.19rem rgba(0,0,0)
-              inset -0.5rem 0rem 0.4rem 0.2rem rgba(255,255,255,0.1);
-  animation:rotate 4s linear infinite;
+  box-shadow: inset 2em 50em 20em rgba(0,0,0)
+              inset 2em 50em 20em rgba(255,255,255,0.1);
+  animation:rotate 6s linear infinite;
 
 }
 @keyframes rotate {
   from {
     background-position-x : 0vh;
-
   }
   to{
     background-position-x: 40vh;
-
   }
 }
 @keyframes text {
