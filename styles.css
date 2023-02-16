@@ -6,7 +6,7 @@
 }
 
 body{
-  background: #18122B;
+  background: black;
 }
 
 .container{
@@ -25,7 +25,7 @@ body{
 .text1{
   font-size:2.5rem;
   font-weight: 400;
-  letter-spacing: 1rem;
+  letter-spacing: 0.75rem;
   margin-bottom: 2rem;
   background:black;
   animation:text 10s 5;
@@ -48,7 +48,6 @@ body{
   box-shadow: inset 2em 50em 20em rgba(0,0,0)
               inset 2em 50em 20em rgba(255,255,255,0.1);
   animation:rotate 6s linear infinite;
-
 }
 @keyframes rotate {
   from {
@@ -61,10 +60,12 @@ body{
 .center{
     position: absolute;
     top: 150px;
-    left: 30px;
+    left: 450px;
+    float: right;
+    margin: 0 0 20px 20px;
 }
 #earth{
-    background: url("https://i.ibb.co/JHk9Gs6/earrthhh.jpg");
+    background: url("https://i.ibb.co/0XcTy98/3-no-ice-clouds-16k.jpg");
     background-size: cover;
     width: 300px;
     height: 300px;
@@ -78,8 +79,10 @@ body{
 #earth::before{
     content: '';
     position: absolute;
+    .center-image img {display: inline-block;}
     top: 265px;
     left: 30px;
+    right: 20px;
     width: 255px;
     height: 60px;
     background: rgba(0, 0, 0, 0.781);
