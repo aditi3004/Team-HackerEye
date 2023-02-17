@@ -152,15 +152,16 @@ function local(value){
         }
       week(value);  
 }
-
+var v1;
 function week(value){
     let te2=document.getElementById("time").value;
     value=value+te2*0.09; 
+    v1=value;
     //calcElec(value);
     //document.write(value);
     //return value;
 }
-var v1=value;
+
 
 function calcElec(){
    let te2=document.getElementById("elec").value;
