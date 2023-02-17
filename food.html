@@ -86,6 +86,27 @@
             <button id="btn">SUBMIT</button>
           </form>
 
+          <h3>CATEGORY: HOUSEHOLD</h3>
+        <label for="foodtype">1.What type of housing?</label>
+        <form>
+            <input class="random" type="checkbox" id="flat" name="house" value="flat">
+            <label for="flat">FLAT</label><br>
+            <input class="random" type="checkbox" id="bungalow" name="house" value="bungalow" >
+            <label for="bungalow">BUNGALOW</label><br>
+           
+            
+            
+          
+          <label for="local">2.Enter electricity consumption in KWhr/month</label>
+          <input class="random" type="text" id="elec" name="month" value=y>
+          <button id="btn1">SUBMIT</button>
+           
+            
+          
+          
+          </form> 
+
+          
           <script>
     
       let btn = document.getElementById("btn");
@@ -94,43 +115,57 @@
         calcFood();
       });
 
+      let btn1 = document.getElementById("btn1");
+     btn1.addEventListener('click', (event) => {
+        event.preventDefault();
+       calcElec();
+     });
       
-
+     
       function calcFood() {
-        
+        var value;
        let te=document.getElementById("nonveg");
         if (te.checked == true){
-            var value=2.21;
+           value=2.21;
         } 
         else {
             let te=document.getElementById("veg");
         
         if(te.checked == true){
-            var value=1.9;
+            value=1.9;
         } 
         else{
-            var value=1.8;
+            value=1.8;
         }
     }
-    local();
+    local(value);
    
 }
         
-function local(){
+function local(value){
     let te1=document.getElementById("YES");
     if (te1.checked == true){
-            var value=value-0.44;
+           value=value-0.44;
         } 
         else{
-            var value=value-0;
+           value=value-0;
         }
-      week();  
+      week(value);  
 }
 
-function week(){
-    let te2=document.getElementById("time");
-    var value=value+value*0.09; 
-    document.write(value);
+function week(value){
+    let te2=document.getElementById("time").value;
+    value=value+te2*0.09; 
+    //calcElec(value);
+    //document.write(value);
+    //return value;
+}
+var v1=value;
+
+function calcElec(){
+   let te2=document.getElementById("elec").value;
+   v1=v1+0.0036*te2; 
+   document.write(v1);
 }
       
     </script>
