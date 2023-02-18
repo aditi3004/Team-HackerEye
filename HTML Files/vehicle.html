@@ -1,1 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 
+    <title>My Form</title>
+    <style>
+      /* Style the form container */
+      .form-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f2f2f2;
+        border-radius: 10px;
+      }
+
+      /* Style the form labels */
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      /* Style the form input fields */
+      input[type="text"], select {
+        width: 100%;
+        padding: 0px;
+        border: 1px solid #ccc;
+        border-radius: 105px;
+        margin-bottom: 160px;
+        box-sizing: content-box;
+        content-box width: 200px;
+        content-box height: 80px
+      }
+
+      /* Style the form submit button */
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        padding: 0px 0px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      /* Style the form submit button on hover */
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>CARBON SCORE CALCULATOR</h2>
+   
+        <h3>CATEGORY: FOOD</h3>
+        <label for="foodtype">What type of food do you prefer?</label>
+        <form>
+            <input class="random" type="checkbox" id="nonveg" name="foodtype" value="Non-vegeterian">
+            <label for="Non-vegeterian">NON-VEGETERIAN</label><br>
+            <input class="random" type="checkbox" id="veg" name="foodtype" value="Vegeterian" >
+            <label for="Vegeterian">VEGETERIAN</label><br>
+            <input class="random" type="checkbox" id="vegan" name="foodtype" value="Vegan">
+            <label for="Vegan">VEGAN</label><br><br>
+            <input class="random" type="text" id="foodDisplay" name="foodDisplay">
+            <button id="btn">SUBMIT</button>
+        </form>
+
+        <h3>CATEGORY: TRAVEL</h3>
+        <form>
+        <label for="car">DO YOU OWN A CAR?</label>
+          <input class="random" type="checkbox" id="yes" name="car" value="yes">
+          <label for="car">YES</label>
+          <input class="random" type="checkbox" id="no" name="car" value="no">
+          <label for="car">NO</label>
+        
+          <label for="mileage">1.Mileage covered by the car (annually):</label>
+          <input class ="random" type="text", id="mil" name="car" >
+        
+          <label for="distance">2.Distance covered by the car:</label>
+          <input class ="random" type="text", id="dis" name="car" >
+
+          <label for="car">3.Type of fuel used?</label>
+            <input class="random" type="checkbox" id="Electric" name="car" value="electric" >
+            <label for="car">ELECTRIC</label><br>
+            <input class="random" type="checkbox" id="Petrol" name="car" value="petrol">
+            <label for="car">PETROL</label><br>
+            <input class="random" type="checkbox" id="Diesel" name="car" value="diesel" >
+            <label for="car">DIESEL</label><br>
+
+            <label for="bike">DO YOU OWN A BIKE?</label>
+            <input class="random" type="checkbox" id="yes" name="bike" value="yes" >
+            <label for="bike">YES</label><br>
+            <input class="random" type="checkbox" id="no" name="bike" value="no">
+            <label for="bike">NO</label><br>
+
+            <label for="mileage">1.Mileage covered by the bike (annually):</label>
+            <input class ="random" type="text" id="mil" name="bike" >
+            
+            <label for="distance">2.Distance covered by the bike:</label>
+            <input class ="random" type="text" id="dis" name="bike" >
+            
+            <label for="bike">3.Type of fuel used?</label>
+            <input class="random" type="checkbox" id="Electric" name="Electric" >
+            <label for="bike">ELECTRIC</label><br>
+            <input class="random" type="checkbox" id="Petrol" name="Petrol">
+            <label for="bike">PETROL</label><br>
+            
+          <label for="bus">TRAVEL BY BUS?</label>
+            <input class="random" type="checkbox" id="yes" name="car" value="yes">
+            <label for="car">YES</label>
+            <input class="random" type="checkbox" id="no" name="car" value="no">
+            <label for="car">NO</label>
+
+            <label for="hrs">1. Number of hours you travel by bus in a week:</label>
+            <input class="random" type="text" id="hrs" >
+          
+
+          <label for="rick">TRAVEL BY RICKSHAW?</label>
+            <input class="random" type="checkbox" id="yes" name="car" value="yes">
+            <label for="car">YES</label>
+            <input class="random" type="checkbox" id="no" name="car" value="no">
+            <label for="car">NO</label>
+
+            <label for="hrs">1. Number of hours you travel by rickshaw in a week:</label>
+            <input class="random" type="text" id="hrs_r" >
+
+          <label for="train">TRAVEL BY TRAIN?</label>
+            <input class="random" type="checkbox" id="yes" name="car" value="yes">
+            <label for="car">YES</label>
+            <input class="random" type="checkbox" id="no" name="car" value="no">
+            <label for="car">NO</label>
+          
+            <label for="hrs">1. Number of hours you travel by train in a week:</label>
+            <input class="random" type="text" id="hrs_t" >
+
+            <label for="rick">TRAVEL BY FLIGHT?</label>
+            <input class="random" type="checkbox" id="yes" name="car" value="yes">
+            <label for="car">YES</label>
+            <input class="random" type="checkbox" id="no" name="car" value="no">
+            <label for="car">NO</label>
+
+            <label for="flight">1.Number of flights you have taken this year:</label>
+            <input class ="random" type="text", id="numfl" name="flights" >
+            
+            <input class="random" type="checkbox" id="Long" name="Long" >
+            <label for="range">LONG (14 HRS AND LESS)</label><br>
+            <input class="random" type="checkbox" id="Medium" name="Medium">
+            <label for="range">MIDDLE (8 HOURS AND LESS)</label><br>
+            <input class="random" type="checkbox" id="Short" name="Short">
+            <label for="range">SHORT (6 HOURS AND LESS)</label><br>
+        <button id="btn2">Submit</button>    
+        </form>
+        
+        
+        
+    </div>
+    <div id="display">
+        <p>FoodName: <span id="foodDisplay"></span></p>
+      </div>
+    <script>
+      let btn = document.getElementById("btn");
+      btn.addEventListener('click', (event) => {
+        event.preventDefault();
+        calcFood();
+      });
+
+      function calcFood() {
+        
+       let te=document.getElementById("nonveg");
+        if (te.checked == true){
+            var value=2.21;
+        } 
+        else {
+            let te=document.getElementById("veg");
+        
+        if(te.checked == true){
+            var value=1.9;
+        } 
+        else{
+            var value=1.8;
+        }
+    }
+    
+}
+      let btn2 = document.getElementById("btn2");
+      btn2.addEventListener('click', (event) => {
+        event.preventDefault();
+        decision1();
+        decision2();
+        decision3();
+        decision4();
+        decision5();
+        flight();
+      }); 
+
+      //car
+      function decision1(){
+        
+        let y=document.getElementById("yes");
+        if(y.checked==true){
+          litres();
+        }
+        else{
+          litresb();
+        }
+      }
+      function litres(){
+        
+        let n=document.getElementById("no");
+        let mil=document.getElementById("mil").value;
+        let dis=document.getElementById("dis").value;
+        value=(dis/mil)*0.001;
+        car(value);
+      }     
+      function car(valuec){
+        
+        let fuel=document.getElementById("Electric");
+        if(fuel.checked==true){
+          var valuec=2;
+        }
+        else{
+          let fuel=document.getElementById("Petrol");
+          if(fuel.checked==true){
+            var valuec=value*19.6;
+            }
+          else{
+            let fuel=document.getElementById("Diesel");
+            if(fuel.checked==true){
+              var valuec=(value*19.6)+0.013;
+            }
+          }
+        }
+        
+        decision2()
+      }
+
+      //bike
+      function decision2(){
+        
+        let y=document.getElementById("yes");
+        if(y.checked==true){
+          litresb();
+        }
+        else{
+          bus();
+        }
+      }
+      function litresb(){
+        var value;
+        let mil=document.getElementById("mil").value;
+        let dis=document.getElementById("dis").value;
+        value=(dis/mil)*0.001;
+        bike(value);
+      }     
+      function bike(valueb){
+
+        let fuel=document.getElementById("Electric");
+        if(fuel.checked==true){
+          var valueb=2;
+        }
+        else{
+          let fuel=document.getElementById("Petrol");
+          if(fuel.checked==true){
+            var valueb=value*19.6;
+            }
+          else{
+            let fuel=document.getElementById("Diesel");
+            if(fuel.checked==true){
+              var valueb=(value*19.6)+0.013;
+            }
+          }
+        }
+        
+        decision3();
+      }
+      
+
+      //bus
+      function decision3(){
+        
+        let y=document.getElementById("yes");
+        if(y.checked==true){
+          bus();
+        }
+        else{
+          rick();
+        }
+      }
+      function bus(valuebu){
+        
+        let hrs=document.getElementById("hrs").value;
+        valuebu =493*0.001*hrs;
+        document.write(valuebu);
+        return valuebu;
+        decision4();
+      }
+      //rick
+      function decision4(){
+        
+        let y=document.getElementById("yes");
+        if(y.checked==true){
+          rick();
+        }
+        else{
+          train();
+        }
+      }
+      function rick(valuer){
+        
+        let hrs_r=document.getElementById("hrs_r").value;
+        valuer=634*0.001*hrs_r;
+        document.write(valuer);
+        return valuer;
+        decision5();
+      }
+
+      //train
+      function decision5(){
+        
+        let y=document.getElementById("yes");
+        if(y.checked==true){
+          train();
+        }
+        else{
+          flight();
+        }
+      }
+      function train(valuet){
+        
+        let hrs_t=document.getElementById("hrs_t").value;
+        valuet=32.4*0.01*hrs_t;
+        document.write(valuet);
+        return valuet;
+      }
+
+      //flight
+      function flight(valuef){
+       
+        let num=document.getElementById("numfl").value;
+        let range=document.getElementById("Long");
+        if(range.checked==true){
+          valuef= 0.092*14*num;
+        }
+        else{
+          let range=document.getElementById("Medium");
+        if(range.checked==true){
+          valuef= 0.092*8*num;
+        }
+        else{
+          let range=document.getElementById("Small");
+        if(range.checked==true){
+          valuef= 0.092*6*num;
+        }
+
+        }
+
+        }
+        netC();
+        document.write(valuef);
+        return valuef;
+      }
+      function netC(){
+        var net=valuec+valueb+valuebu+valuer+valuet+valuef;
+        return net;
+      }
+      
+    </script>
+  </body>
+</html>
+
+</body>
+</html>
