@@ -94,19 +94,46 @@
             <input class="random" type="checkbox" id="bungalow" name="house" value="bungalow" >
             <label for="bungalow">BUNGALOW</label><br>
            
-            
-            
           
-          <label for="local">2.Enter electricity consumption in KWhr/month</label>
+          <label for="local">2.Enter electricity consumption in KWhr/month.</label>
           <input class="random" type="text" id="elec" name="month" value=y>
-          <button id="btn1">SUBMIT</button>
-           
-            
           
-          
-          </form> 
 
-          
+          <label for="equi">3.How many equipments in your house work on electricity?</label>
+          <form>
+            <input class="random" type="checkbox" id="e1" name="e2" value="e2">
+            <label for="e2">LESS THAN 5</label><br>
+            <input class="random" type="checkbox" id="e2" name="e1" value="e3" >
+            <label for="e3">5-10</label><br>
+            <input class="random" type="checkbox" id="e2" name="e1" value="e4" >
+            <label for="e4">MORE THAN 10</label><br>
+            <button id="btn1">SUBMIT</button>
+         </form> 
+            
+         <h3>CATEGORY: WASTE REDUCTION</h3>
+         <label for="foodtype">Do you handle waste?</label>
+         <form>
+             <input class="random" type="checkbox" id="food" name="waste" value="food">
+             <label for="food">FOOD</label><br>
+             <input class="random" type="checkbox" id="paper" name="waste" value="paper" >
+             <label for="paper">PAPER</label><br>
+             <input class="random" type="checkbox" id="tincan" name="waste" value="tincan" >
+             <label for="tincan">TINCAN</label><br>
+             <input class="random" type="checkbox" id="plastic" name="waste" value="plastic" >
+             <label for="plastic">PLASTIC</label><br>
+             <input class="random" type="checkbox" id="clay" name="waste" value="clay" >
+             <label for="clay">CLAY</label><br>
+             <input class="random" type="text" id="waste" name="red" value=w>
+             <button id="btn2">SUBMIT</button>
+         </form>
+
+         <h3>OXYGEN FOOTPRINT CALCULATOR</h3>
+         <label for="oxy">How many plants do you plant per year?</label>
+         <form>
+             <input class="random" type="text" id="oxy" name="oxyscore" value=z>
+             <button id="btnF">SUBMIT</button>
+             
+         </form> 
           <script>
     
       let btn = document.getElementById("btn");
@@ -120,7 +147,18 @@
         event.preventDefault();
        calcElec();
      });
+
+     let btn2 = document.getElementById("btn2");
+     btn1.addEventListener('click', (event) => {
+        event.preventDefault();
+       waste();
+     });
       
+    let btnF = document.getElementById("btnF");
+     btn.addEventListener('click', (event) => {
+    event.preventDefault();
+    final();
+    });
      
       function calcFood() {
         var value;
@@ -162,11 +200,27 @@ function week(value){
     //return value;
 }
 
-
-function calcElec(){
+var v2;
+function calcElec(v1){
    let te2=document.getElementById("elec").value;
    v1=v1+0.0036*te2; 
-   document.write(v1);
+   v2=v1;
+   //document.write(v1);
+  
+   
+}
+var v3;
+function waste(v2){
+    let te3=document.getElementById("waste").value;
+    v2=v2+te3*0.07;
+    v3=v2;
+    document.write(v2);
+ }
+
+function final(){
+    let te3=document.getElementById("oxyscore").value;
+    v3=0.018*te3;
+    document.write(v3);
 }
       
     </script>
