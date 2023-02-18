@@ -1,231 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 
-    <title>My Form</title>
-    <style>
-      /* Style the form container */
-      .form-container {
-        max-width: 1400px;
-        margin: 0 auto;
-        padding: 20px;
-        background-color: #f2f2f2;
-        border-radius: 10px;
-      }
+<title>My Form</title>
+<style>
+  /* Style the form container */
+  .form-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+  }
 
-      /* Style the form labels */
-      label {
-        display: block;
-        font-weight: bold;
-        margin-bottom: 10px;
-      }
+  /* Style the form labels */
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
 
-      /* Style the form input fields */
-      input[type="text"], select {
-        width: 100%;
-        padding: 0px;
-        border: 1px solid #ccc;
-        border-radius: 105px;
-        margin-bottom: 160px;
-        box-sizing: content-box;
-        content-box width: 200px;
-        content-box height: 80px
-      }
+  /* Style the form input fields */
+  input[type="text"],
+  select {
+    width: 100%;
+    padding: 0px;
+    border: 1px solid #ccc;
+    border-radius: 105px;
+    margin-bottom: 160px;
+    box-sizing: content-box;
+    content-box width: 200px;
+    content-box height: 80px
+  }
 
-      /* Style the form submit button */
-      input[type="submit"] {
-        background-color: #4CAF50;
-        color: #fff;
-        border: none;
-        padding: 0px 0px;
-        border-radius: 5px;
-        cursor: pointer;
-      }
+  /* Style the form submit button */
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 0px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
 
-      /* Style the form submit button on hover */
-      input[type="submit"]:hover {
-        background-color: #45a049;
-      }
-    </style>
-  </head>
-  <body>
-    
-    <div class="form-container">
-      <h2>CARBON SCORE CALCULATOR</h2>
-   
-        <h3>CATEGORY: FOOD</h3>
-        <label for="foodtype">1.What type of food do you prefer?</label>
-        <form>
-            <input class="random" type="checkbox" id="nonveg" name="foodtype" value="Non-vegeterian">
-            <label for="Non-vegeterian">Non-vegeterian</label><br>
-            <input class="random" type="checkbox" id="veg" name="foodtype" value="Vegeterian" >
-            <label for="Vegeterian">Vegeterian</label><br>
-            <input class="random" type="checkbox" id="vegan" name="foodtype" value="Vegan">
-            <label for="Vegan">Vegan</label><br><br>
-            
-            
-          
-          <label for="local">2.Do you use local products?</label>
-        
-            <input class="random" type="checkbox" id="YES" name="org" value="YES">
-            <label for="YES">YES</label><br>
-            <input class="random" type="checkbox" id="NO" name="org" value="NO" >
-            <label for="NO">NO</label><br>
-           
-            
-          
-          <label for="out">3.How many times does your family eat out in a week?</label>
-        
-            <input class="random" type="text" id="time" name="week" value=x>
-            
-            <button id="btn">SUBMIT</button>
-          </form>
+  /* Style the form submit button on hover */
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+</style>
+</head>
 
-          <h3>CATEGORY: HOUSEHOLD</h3>
-        <label for="foodtype">1.What type of housing?</label>
-        <form>
-            <input class="random" type="checkbox" id="flat" name="house" value="flat">
-            <label for="flat">FLAT</label><br>
-            <input class="random" type="checkbox" id="bungalow" name="house" value="bungalow" >
-            <label for="bungalow">BUNGALOW</label><br>
-           
-          
-          <label for="local">2.Enter electricity consumption in KWhr/month.</label>
-          <input class="random" type="text" id="elec" name="month" value=y>
-          
+<body>
 
-          <label for="equi">3.How many equipments in your house work on electricity?</label>
-          <form>
-            <input class="random" type="checkbox" id="e1" name="e2" value="e2">
-            <label for="e2">LESS THAN 5</label><br>
-            <input class="random" type="checkbox" id="e2" name="e1" value="e3" >
-            <label for="e3">5-10</label><br>
-            <input class="random" type="checkbox" id="e2" name="e1" value="e4" >
-            <label for="e4">MORE THAN 10</label><br>
-            <button id="btn1">SUBMIT</button>
-         </form> 
-            
-         <h3>CATEGORY: WASTE REDUCTION</h3>
-         <label for="foodtype">Do you handle waste?</label>
-         <form>
-             <input class="random" type="checkbox" id="food" name="waste" value="food">
-             <label for="food">FOOD</label><br>
-             <input class="random" type="checkbox" id="paper" name="waste" value="paper" >
-             <label for="paper">PAPER</label><br>
-             <input class="random" type="checkbox" id="tincan" name="waste" value="tincan" >
-             <label for="tincan">TINCAN</label><br>
-             <input class="random" type="checkbox" id="plastic" name="waste" value="plastic" >
-             <label for="plastic">PLASTIC</label><br>
-             <input class="random" type="checkbox" id="clay" name="waste" value="clay" >
-             <label for="clay">CLAY</label><br>
-             <input class="random" type="text" id="waste" name="red" value=w>
-             <button id="btn2">SUBMIT</button>
-         </form>
+  <div class="form-container">
+    <h2>CARBON SCORE CALCULATOR</h2>
 
-         <h3>OXYGEN FOOTPRINT CALCULATOR</h3>
-         <label for="oxy">How many plants do you plant per year?</label>
-         <form>
-             <input class="random" type="text" id="oxy" name="oxyscore" value=z>
-             <button id="btnF">SUBMIT</button>
-             
-         </form> 
-          <script>
-    
-      let btn = document.getElementById("btn");
-      btn.addEventListener('click', (event) => {
-        event.preventDefault();
-        calcFood();
-      });
+    <h3>CATEGORY: FOOD</h3>
+    <label for="foodtype">1.What type of food do you prefer?</label>
+    <form>
+      <input class="random" type="checkbox" id="nonveg" name="foodtype" value="Non-vegeterian">
+      <label for="Non-vegeterian">Non-vegeterian</label><br>
+      <input class="random" type="checkbox" id="veg" name="foodtype" value="Vegeterian">
+      <label for="Vegeterian">Vegeterian</label><br>
+      <input class="random" type="checkbox" id="vegan" name="foodtype" value="Vegan">
+      <label for="Vegan">Vegan</label><br><br>
 
-      let btn1 = document.getElementById("btn1");
-     btn1.addEventListener('click', (event) => {
-        event.preventDefault();
-       calcElec();
-     });
 
-     let btn2 = document.getElementById("btn2");
-     btn1.addEventListener('click', (event) => {
-        event.preventDefault();
-       waste();
-     });
-      
-    let btnF = document.getElementById("btnF");
-     btn.addEventListener('click', (event) => {
-    event.preventDefault();
-    final();
-    });
-     
-      function calcFood() {
-        var value;
-       let te=document.getElementById("nonveg");
-        if (te.checked == true){
-           value=2.21;
-        } 
-        else {
-            let te=document.getElementById("veg");
-        
-        if(te.checked == true){
-            value=1.9;
-        } 
-        else{
-            value=1.8;
+
+      <label for="local">2.Do you use local products?</label>
+
+      <input class="random" type="checkbox" id="YES" name="org" value="YES">
+      <label for="YES">YES</label><br>
+      <input class="random" type="checkbox" id="NO" name="org" value="NO">
+      <label for="NO">NO</label><br>
+
+
+
+      <label for="out">3.How many times does your family eat out in a week?</label>
+
+      <input class="random" type="text" id="time" name="week" value=x>
+
+      <button id="btn">SUBMIT</button>
+    </form>
+
+    <h3>CATEGORY: HOUSEHOLD</h3>
+    <label for="foodtype">1.What type of housing?</label>
+    <form>
+      <input class="random" type="checkbox" id="flat" name="house" value="flat">
+      <label for="flat">FLAT</label><br>
+      <input class="random" type="checkbox" id="bungalow" name="house" value="bungalow">
+      <label for="bungalow">BUNGALOW</label><br>
+
+
+      <label for="local">2.Enter electricity consumption in KWhr/month.</label>
+      <input class="random" type="text" id="elec" name="month" value=y>
+
+
+      <label for="equi">3.How many equipments in your house work on electricity?</label>
+      <form>
+        <input class="random" type="checkbox" id="e1" name="e2" value="e2">
+        <label for="e2">LESS THAN 5</label><br>
+        <input class="random" type="checkbox" id="e2" name="e1" value="e3">
+        <label for="e3">5-10</label><br>
+        <input class="random" type="checkbox" id="e2" name="e1" value="e4">
+        <label for="e4">MORE THAN 10</label><br>
+        <button id="btn1">SUBMIT</button>
+      </form>
+
+      <h3>CATEGORY: WASTE REDUCTION</h3>
+      <label for="foodtype">Do you handle waste?</label>
+      <form>
+        <input class="random" type="checkbox" id="food" name="waste" value="food">
+        <label for="food">FOOD</label><br>
+        <input class="random" type="checkbox" id="paper" name="waste" value="paper">
+        <label for="paper">PAPER</label><br>
+        <input class="random" type="checkbox" id="tincan" name="waste" value="tincan">
+        <label for="tincan">TINCAN</label><br>
+        <input class="random" type="checkbox" id="plastic" name="waste" value="plastic">
+        <label for="plastic">PLASTIC</label><br>
+        <input class="random" type="checkbox" id="clay" name="waste" value="clay">
+        <label for="clay">CLAY</label><br>
+        <input class="random" type="text" id="waste" name="red" value=w>
+        <button id="btn2">SUBMIT</button>
+      </form>
+
+      <h3>OXYGEN FOOTPRINT CALCULATOR</h3>
+      <label for="oxy">How many plants do you plant per year?</label>
+      <form>
+        <input class="random" type="text" id="oxy" name="oxyscore" value=z>
+        <button id="btnF">SUBMIT</button>
+
+      </form>
+      <script>
+        let btn = document.getElementById("btn");
+        btn.addEventListener('click', (event) => {
+          event.preventDefault();
+          calcFood();
+        });
+
+        let btn1 = document.getElementById("btn1");
+        btn1.addEventListener('click', (event) => {
+          event.preventDefault();
+          calcElec();
+        });
+
+        let btn2 = document.getElementById("btn2");
+
+        btn2.addEventListener('click', (event) => {
+          event.preventDefault();
+          waste();
+
+        });
+
+        let btnF = document.getElementById("btnF");
+        btnF.addEventListener('click', (event) => {
+          event.preventDefault();
+          final();
+        });
+
+        function calcFood() {
+          var value;
+          let te = document.getElementById("nonveg");
+          if (te.checked == true) {
+            value = 2.21;
+
+          } else {
+            let te = document.getElementById("veg");
+
+            if (te.checked == true) {
+              value = 1.9;
+
+            } else {
+              value = 1.8;
+            }
+          }
+          local(value);
+
         }
-    }
-    local(value);
-   
-}
-        
-function local(value){
-    let te1=document.getElementById("YES");
-    if (te1.checked == true){
-           value=value-0.44;
-        } 
-        else{
-           value=value-0;
+
+        function local(value) {
+          console.log("local", value)
+          let te1 = document.getElementById("YES");
+          if (te1.checked == true) {
+            value = value - 0.44;
+          } else {
+            value = value - 0;
+          }
+          week(value);
         }
-      week(value);  
-}
-var v1;
-function week(value){
-    let te2=document.getElementById("time").value;
-    value=value+te2*0.09; 
-    v1=value;
-    //calcElec(value);
-    //document.write(value);
-    //return value;
-}
+        var usingInCalcElec;
 
-var v2;
-function calcElec(v1){
-   let te2=document.getElementById("elec").value;
-   v1=v1+0.0036*te2; 
-   v2=v1;
-   //document.write(v1);
-  
-   
-}
-var v3;
-function waste(v2){
-    let te3=document.getElementById("waste").value;
-    v2=v2+te3*0.07;
-    v3=v2;
-    document.write(v2);
- }
+        function week(value) {
+          let te2 = document.getElementById("time").value;
+          value = value + te2 * 0.09;
+          // calcElec(value);
+          usingInCalcElec = value;
+          //return value;
+        }
 
-function final(){
-    let te3=document.getElementById("oxyscore").value;
-    v3=0.018*te3;
-    document.write(v3);
-}
-      
-    </script>
-  </body>
+        var v2;
+
+        function calcElec() {
+          let te2 = document.getElementById("elec").value;
+          usingInCalcElec = usingInCalcElec + 0.0036 * te2;
+          console.log(usingInCalcElec)
+          v2 = usingInCalcElec;
+          console.log(usingInCalcElec, "final value in calcelec")
+
+        }
+        var v3;
+
+
+        function waste() {
+          let te3 = document.getElementById("waste").value;
+          v2 = v2 + te3 * 0.07;
+          v3 = v2;
+        }
+        var finalVar;
+
+        function final() {
+          let te4 = document.getElementById("oxy").value;
+          finalVar = 0.11 * te4;
+          cc(v3);
+        }
+
+        function cc(v3) {
+          console.log("Carbon Footprint: ", v3 - finalVar);
+          document.write(v3 - finalVar);
+        }
+      </script>
+</body>
+
 </html>
 
 </body>
+
 </html>
